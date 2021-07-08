@@ -19,6 +19,7 @@ let package = Package(
             name: "SwiftInternal",
             linkerSettings: [
                 .linkedLibrary("swift_Concurrency"),
+                .unsafeFlags(["-L/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2020-12-22-a.xctoolchain/usr/lib/swift/macosx/"]),
             ]),
         .testTarget(
             name: "PlaygroundTests",
